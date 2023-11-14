@@ -62,6 +62,12 @@ for (let i = 0; i < 10; i++) {
     miscubos.push(micubo);
 }
 
+renderer.setAnimationLoop( function () {
+
+	renderer.render( scene, camera );
+
+} );
+
 function animate() {
     requestAnimationFrame(animate);
 
